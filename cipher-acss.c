@@ -76,7 +76,7 @@ evp_acss(void)
 	acss_cipher.block_size = 1;
 	acss_cipher.key_len = 5;
 	acss_cipher.init = acss_init_key;
-	acss_cipher.do_cipher = acss_ciph;
+	acss_cipher.cipher = acss_ciph;
 	acss_cipher.ctx_size = sizeof(EVP_ACSS_KEY);
 	acss_cipher.ctrl = acss_ctrl;
 

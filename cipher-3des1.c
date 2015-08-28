@@ -175,7 +175,7 @@ evp_ssh1_3des(void)
 	ssh1_3des.key_len = 16;
 	ssh1_3des.init = ssh1_3des_init;
 	ssh1_3des.cleanup = ssh1_3des_cleanup;
-	ssh1_3des.do_cipher = ssh1_3des_cbc;
+	ssh1_3des.cipher = ssh1_3des_cbc;
 #ifndef SSH_OLD_EVP
 	ssh1_3des.flags = EVP_CIPH_CBC_MODE | EVP_CIPH_VARIABLE_LENGTH;
 #endif

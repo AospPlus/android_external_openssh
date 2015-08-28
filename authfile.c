@@ -581,7 +581,7 @@ key_parse_private_pem(Buffer *blob, int type, const char *passphrase,
 #endif /* OPENSSL_HAS_ECC */
 	} else {
 		error("%s: PEM_read_PrivateKey: mismatch or "
-		    "unknown EVP_PKEY save_type %d", __func__, pk->save_type);
+		    "unknown EVP_PKEY type", __func__, pk->type);
 	}
 	if (pk != NULL)
 		EVP_PKEY_free(pk);

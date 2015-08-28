@@ -165,7 +165,7 @@ mac_clear(Mac *mac)
 		if (mac->umac_ctx != NULL)
 			umac_delete(mac->umac_ctx);
 	} else if (mac->evp_md != NULL)
-		HMAC_cleanup(&mac->evp_ctx);
+		HMAC_CTX_cleanup(&mac->evp_ctx);
 	mac->evp_md = NULL;
 	mac->umac_ctx = NULL;
 }

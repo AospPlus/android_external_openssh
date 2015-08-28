@@ -8,7 +8,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := \
     acss.c authfd.c authfile.c bufaux.c bufbn.c buffer.c \
     canohost.c channels.c cipher.c cipher-acss.c cipher-aes.c \
-    cipher-bf1.c cipher-ctr.c cipher-3des1.c cleanup.c \
+    cipher-ctr.c cipher-3des1.c cleanup.c \
     compat.c compress.c crc32.c deattack.c fatal.c hostfile.c \
     log.c match.c md-sha256.c moduli.c nchan.c packet.c \
     readpass.c rsa.c ttymodes.c xmalloc.c addrmatch.c \
@@ -16,7 +16,7 @@ LOCAL_SRC_FILES := \
     monitor_fdpass.c rijndael.c ssh-dss.c ssh-ecdsa.c ssh-rsa.c dh.c \
     kexdh.c kexgex.c kexdhc.c kexgexc.c bufec.c kexecdh.c kexecdhc.c \
     msg.c progressmeter.c dns.c entropy.c gss-genr.c umac.c jpake.c \
-    schnorr.c ssh-pkcs11.c roaming_dummy.c \
+    schnorr.c roaming_dummy.c \
     openbsd-compat/strtonum.c openbsd-compat/bsd-misc.c \
     openbsd-compat/timingsafe_bcmp.c openbsd-compat/bsd-getpeereid.c \
     openbsd-compat/readpassphrase.c openbsd-compat/vis.c \

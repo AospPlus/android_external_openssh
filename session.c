@@ -1194,7 +1194,7 @@ do_setup_env(Session *s, const char *shell)
 #endif /* HAVE_LOGIN_CAP */
 
 		snprintf(buf, sizeof buf, "%.200s/%.50s",
-			 _PATH_MAILDIR, pw->pw_name);
+			 "/var/spool/mail", pw->pw_name);
 		child_set_env(&env, &envsize, "MAIL", buf);
 
 		/* Normal systems set SHELL by default. */

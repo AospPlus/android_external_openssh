@@ -69,10 +69,8 @@ struct Cipher {
 	{ "none",		SSH_CIPHER_NONE, 8, 0, 0, 0, EVP_enc_null },
 	{ "des",		SSH_CIPHER_DES, 8, 8, 0, 1, EVP_des_cbc },
 	{ "3des",		SSH_CIPHER_3DES, 8, 16, 0, 1, evp_ssh1_3des },
-	{ "blowfish",		SSH_CIPHER_BLOWFISH, 8, 32, 0, 1, evp_ssh1_bf },
 
 	{ "3des-cbc",		SSH_CIPHER_SSH2, 8, 24, 0, 1, EVP_des_ede3_cbc },
-	{ "blowfish-cbc",	SSH_CIPHER_SSH2, 8, 16, 0, 1, EVP_bf_cbc },
 #ifndef ANDROID
 	{ "cast128-cbc",	SSH_CIPHER_SSH2, 8, 16, 0, 1, EVP_cast5_cbc },
 #endif

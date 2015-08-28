@@ -135,7 +135,7 @@ host_hash(const char *host, const char *name_from_hostfile, u_int src_len)
 	HMAC_Init(&mac_ctx, salt, len, md);
 	HMAC_Update(&mac_ctx, host, strlen(host));
 	HMAC_Final(&mac_ctx, result, NULL);
-	HMAC_cleanup(&mac_ctx);
+	HMAC_CTX_cleanup(&mac_ctx);
 
 	if (__b64_ntop(salt, len, uu_salt, sizeof(uu_salt)) == -1 ||
 	    __b64_ntop(result, len, uu_result, sizeof(uu_result)) == -1)
